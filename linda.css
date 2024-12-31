@@ -1,0 +1,180 @@
+#hamburger{
+    width:40px;
+    height:30px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:50px;
+}
+#felso{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:0 20px;
+    background-color: rgb(240, 194, 194);
+    border:solid rgb(240, 194, 194) 20px;
+}
+h1{
+    margin:auto;
+    text-align: center;
+    font-style: italic;
+    font-family: Lavishly Yours;
+    font-size: 50px;
+}
+.lavishly-yours-regular {
+    font-family: "Lavishly Yours", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+#content{
+    background-image: url(kep/linda-hatter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    background-image: url(kep_css/linda-hatter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+    height:77vh;
+    scroll-behavior: smooth;
+    
+}
+.menü{
+    background-color: rgb(240, 194, 194);
+    color:rgb(0, 0, 0);
+    border: none;
+    z-index:1;
+    min-height: 40px;
+    display:block;
+    margin: 25px auto 25px auto;
+    cursor: pointer;
+}
+#menü{
+    list-style: none;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:77vh;
+    text-align:center;
+    background-color:rgb(240, 194, 194);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    display:none;
+    z-index: 1;
+    position:absolute
+}
+
+#menü li{
+    width:100%;
+    border-bottom: 1px solid;
+}
+#menü li:last-child{
+    border-bottom: none;
+}
+#menü.show{
+    display:block;
+    animation: slideIn 0.5s ease forwards;
+}
+#menü.hide{
+    animation: slideOut 0.5s ease forwards;
+}
+@keyframes slideIn{
+    from{
+        transform:translateX(-100%) ;
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut{
+    from{
+        transform:translateX(0) ;
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#nagyon{
+    display:none;
+}
+#nagyon_kepek{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+img{
+    height:300px;
+    border-radius: 30px;
+    align-items: center;
+
+}
+.nagyon{
+    background:none;
+    border:none;
+    cursor:pointer;
+    display:block;
+}
+#nagyon_cim{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Lavishly Yours;
+}
+figure{
+    text-align: center;
+    margin:0 5px
+}
+figcaption{
+    font-family: Lavishly Yours;
+    font-weight: bold;
+    font-size: 30px;
+}
+#válasz{
+    display:none;
+    text-align: center;
+}
+.rossz{
+    color:red;
+    animation:shake 2s;
+    font-family: cursive;
+    font-weight: bold;
+    font-size:50px;
+    margin-top: 1px
+}
+.jo{
+    color:green;
+    animation:fadeIn 1s;
+    font-family: cursive;
+    font-weight: bold;
+    font-size:50px;
+    margin-top: 1px
+}
+@keyframes shake{
+    0%{transform:translate(0);}
+    10%{transform:translate(-8px);}
+    20%{transform:translate(8px);}
+    30%{transform:translate(-8px);}
+    40%{transform:translate(8px);}
+    50%{transform:translate(-8px);}
+    60%{transform:translate(8px);}
+    70%{transform:translate(-8px);}
+    80%{transform:translate(8px);}
+    90%{transform:translate(-8px);}
+    100%{transform:translate(0);}
+}
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes moveDown{
+    from{transform:translateY(-50px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}

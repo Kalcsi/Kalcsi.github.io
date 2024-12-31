@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head lang="hu">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+        <title>Linda</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/linda.css">
+        
+    </head>
+    <body>
+
+        <!--Menü és cím-->
+        <div id="fix">
+
+            <!--CÍM-->
+            <div id="felso"> 
+                <button id="hamburger" >&#9776;</button>
+                <h1>A legszebb lánynak</h1>
+            </div>
+
+            <!--MENÜ-->
+            <ul id="menü" >
+                <li><button class="menü" id="nagyongomb">Nagyon</button></li>
+                <li><button class="menü" id="szeretlekgomb">Szeretlek</button></li>
+                <li><button class="menü" id="tégedgomb">Téged</button></li>
+                <li><button class="menü" id="szivecskegomb">&#10084;</button></li>
+            </ul>
+        </div>
+
+
+        <!--"Nagyon" gombtól lenyíló rész-->
+        <div id="nagyon">
+
+            <!--KÉRDÉS-->
+            <div id="nagyon_cim"><h2 id="par">Melyik a legjobb páros?</h2></div>
+
+            <!--KÉPEK-->
+            <div id="nagyon_kepek">
+
+                <!--LEBRON ÉS SAVANNAH-->
+                <figure>
+                    <button class="nagyon" id="nagyonbron"><img src="css/kep_css/bron_savannah.jpg" alt="LeBron James és a felesége Savannah"></button>
+                    <figcaption>LeBron és Savannah</figcaption>
+                </figure>
+
+                <!--MORDECAI ÉS CJ-->
+                <figure>
+                    <button class="nagyon" id="nagyonmordo"><img src="css/kep_css/mordo_cj.jpg" alt="Mordecai és a barátnője CJ"></button>
+                    <figcaption>Mordecai és CJ</figcaption>
+                </figure>
+
+                <!--MI-->
+                <figure>
+                    <button class="nagyon" id="nagyonmi"><img src="css/kep_css/linda_dani.jpg" alt="Erőss Dániel és a felesége Linda"></button>
+                    <figcaption>Mi</figcaption>
+                </figure>
+            </div>
+
+            <!--VÁLASZ-->
+            <div><p id="válasz"></p></div>
+        </div>
+
+
+
+        <!--"Szeretlek" gombtól lenyíló rész-->
+        <div id="szeretlek">
+
+        </div>
+
+
+        <!--"Téged" gombtól lenyíló rész-->
+        <div id="téged">
+
+        </div>
+
+
+        <!--"Szivecske" gombtól lenyíló rész-->
+        <div id="szivecske">
+
+        </div>
+
+        <script src="script/linda.js"></script>
+    </body>
+</html>
